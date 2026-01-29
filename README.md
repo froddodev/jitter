@@ -1,4 +1,4 @@
-# Jitter (CTF)
+# Jitter Lab
 
 <div align="center">
 
@@ -60,8 +60,8 @@ _La aplicación estará disponible en [http://localhost:3000](http://localhost:3
 
 ## Desafíos y Objetivos
 
-| Objective                   | Challenge                                                    | Vulnerability                                                                                                                    |
-| :-------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| Objective                   | Challenge                                                          | Vulnerability                                                                                                                    |
+| :-------------------------- | :----------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | **Reconocimiento**          | Enumeración de cuentas mediante análisis de discrepancia temporal. | [Timing Attack](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-response-timing) |
 | **Escalada de Privilegios** | Compromiso de secretos de sesión y manipulación de identidad.      | [JWT Weak Secret](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-weak-signing-key)                   |
 | **Bypass**                  | Evasión de controles de red y bypass de rate limiting.             | [IP Spoofing](https://www.verylazytech.com/bypass-rating-limit)                                                                  |
