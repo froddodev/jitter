@@ -1,4 +1,4 @@
-# Jitter Lab
+# Jitter
 
 <div align="center">
 
