@@ -1,0 +1,7 @@
+services:
+  jitter:
+    build: .
+    container_name: jitter
+    restart: always
+    ports:
+      - "3000:3000"

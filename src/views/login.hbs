@@ -1,0 +1,56 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h2>Jitter</h2>
+        <p style="font-size: 14px; color: #71717a;">Ingresa tus credenciales para continuar</p>
+      </div>
+
+      <form action="/api/login" method="POST">
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="admin@jitter.io"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+        <button type="submit" class="btn-primary">Iniciar sesión</button>
+      </form>
+
+      {{#if error}}
+        <div id="message" style="margin-top: 16px; text-align: center; font-size: 13px; color: #ef4444;">
+          {{error}}
+        </div>
+      {{/if}}
+
+      <div style="margin-top: 24px; text-align: center;">
+        <a href="#" style="font-size: 13px; color: #71717a; text-decoration: none;">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+
+    {{#if rateLimitError}}
+      <div style="position: fixed; bottom: 0; left: 0; width: 100%; background: #450a0a; color: #ef4444; padding: 12px; text-align: center; font-size: 13px; font-weight: 600; border-top: 1px solid #7f1d1d;">
+        {{rateLimitError}}
+      </div>
+    {{/if}}
+  </body>
+</html>

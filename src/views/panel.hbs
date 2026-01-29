@@ -1,0 +1,75 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/panel" class="logo">Jitter</a>
+        <div class="nav-right">
+          <span class="user-tag">{{user.email}}</span>
+          {{#if isAdmin}}
+            <a
+              href="/admin"
+              class="nav-link"
+              style="font-weight: 600; color: #a1a1aa;"
+            >Administración</a>
+          {{/if}}
+          <a href="/api/logout" class="nav-link" style="color: #ef4444;">Cerrar
+            sesión</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content">
+      <div class="page-header">
+        <h1>Gestión de Usuarios</h1>
+        <p>Monitoreo global de accesos y estados de cuenta.</p>
+      </div>
+
+      <div class="card">
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Rol</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each users}}
+                <tr>
+                  <td style="font-weight: 500;">{{id}}</td>
+                  <td style="font-weight: 500;">{{name}}</td>
+                  <td>{{email}}</td>
+                  <td><span
+                      class="status-pill pill-offline"
+                    >{{role}}</span></td>
+                  <td>
+                    <div style="display: flex; align-items: center;">
+                      <span class="status-dot dot-online"></span>
+                      {{status}}
+                    </div>
+                  </td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    {{#if rateLimitError}}
+      <div
+        style="position: fixed; bottom: 0; left: 0; width: 100%; background: #450a0a; color: #ef4444; padding: 12px; text-align: center; font-size: 13px; font-weight: 600; border-top: 1px solid #7f1d1d;"
+      >
+        {{rateLimitError}}
+      </div>
+    {{/if}}
+  </body>
+</html>
