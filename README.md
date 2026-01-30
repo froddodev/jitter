@@ -5,7 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-v20-green?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-Framework-black?style=flat-square&logo=express)](https://expressjs.com/)
 [![SQLite](https://img.shields.io/badge/SQLite-Database-blue?style=flat-square&logo=sqlite)](https://www.sqlite.org/)
-[![JWT](https://img.shields.io/badge/JWT-None--Vulnerable-black?style=flat-square&logo=json-web-tokens)](https://jwt.io/)
+[![JWT](https://img.shields.io/badge/JWT-Vulnerable-black?style=flat-square&logo=json-web-tokens)](https://jwt.io/)
 [![Handlebars](https://img.shields.io/badge/HBS-Templates-orange?style=flat-square)](https://handlebarsjs.com/)
 [![Docker](https://img.shields.io/badge/Docker-Container-blue?style=flat-square&logo=docker)](https://www.docker.com/)
 
