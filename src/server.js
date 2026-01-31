@@ -7,7 +7,7 @@ import { limiter } from "./middleware/rate_limit.middleware.js";
 
 const app = express();
 
-const BASE_URL = "http://localhost";
+const BASE_URL = "0.0.0.0";
 const PORT = 3000;
 
 initDB();

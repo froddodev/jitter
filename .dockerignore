@@ -5,6 +5,8 @@ npm-debug.log
 .gitignore
 README.md
 CONCEPT.md
+WRITEUP.md
+tools
 src/data/*.db
 Dockerfile
 docker-compose.yml

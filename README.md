@@ -37,6 +37,10 @@ Para entender la filosofía detrás de este laboratorio y detalles técnicos adi
 > [!TIP]
 > **[Leer CONCEPT](CONCEPT.md)**
 
+> [!NOTE]
+> **[Leer Writeup](WRITEUP.md)**
+> Los `scripts` usados se encuentran en la carpeta `tools/`
+
 ---
 
 ## Configuración y Ejecución Local
