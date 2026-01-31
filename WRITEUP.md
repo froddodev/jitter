@@ -109,7 +109,7 @@ Utilizamos el secreto `ontock` para generar un nuevo token con privilegios eleva
 
 ### Ejecutamos el script para nuevo token:
 
-Sabiendo la forma de el token generamos uno nuevo, usamos `jwt_breaker.rb`
+Sabiendo la forma de el token generamos uno nuevo, usamos `jwt_forger.rb`
 
 ```bash
 ruby jwt_forger.rb "TOKEN_ORIGINAL" "ontock"
