@@ -39,6 +39,7 @@ Para entender la filosofía detrás de este laboratorio y detalles técnicos adi
 
 > [!NOTE]
 > **[Leer Writeup](WRITEUP.md)**
+>
 > Los `scripts` usados se encuentran en la carpeta `tools/`
 
 ---
